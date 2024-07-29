@@ -8,8 +8,8 @@ for i in range (0,int(size[0])):
 
 for j in range (0,int(size[1])):
     line=''
-    for k in range(int(size[0])-1,-1,-1):
+    for k in range(0,int(size[0])):
         line+=strings[k][j]
-        if k!=0:
+        if k!=int(size[0])-1:
             line+=' '
     print(line)
